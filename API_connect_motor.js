@@ -30,9 +30,9 @@ async function getISS(){
 async function motorAction(){
     const response = await getISS();
     const visibility = await response;
-    //console.log(visibility); // prints daylight
+    
 
-
+// sentences to be exchanged with motor actions
     if(visibility == "daylight"){
         console.log("The ISS is currently in a daylight zone.");
 
